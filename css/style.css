@@ -16,10 +16,6 @@ general
 */
 
 /* 
-header  
-*/
-
-/* 
 main  
 */
 
@@ -30,30 +26,91 @@ main
 }
 
 .container-main-left {
-    background-color: lightcyan;
+    background-color: lightcoral;
     width: 200px;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
 }
 
-.logo {
-    max-width: 100px;
-    padding-left: 10px;
-}
-
-.menu-home div  {
+.menu-home nav ul li a {
+    text-decoration: none;
+    color: #86888c;
     display: flex;
     align-items: center;
 }
 
-.home > img ,
-.cerca > img ,
-.library > img {
-    max-width: 30px;
+.menu-home nav ul li a > span {
+    padding-left: 10px;
+}
+
+.logo {
+    max-width: 200px;
+    padding: 20px 10px 10px;
+    
+}
+
+.home > a img ,
+.cerca > a img ,
+.library > a img {
+    max-width: 40px;
     padding-left: 10px;
 }
 
 .home {
     border-left: 3px solid green;
+}
+
+#top .container-main-left-central {
+    flex-grow: 1;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    
+}
+
+.container-main-left-central nav {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.container-main-left-bottom div  {
+    margin: 5px 10px;
+}
+
+.container-main-left-bottom div a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.download  {
+    border-bottom: 1px solid #86888c;
+}
+
+.download > a img {
+    max-width: 20px;
+}
+
+.download > a span {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.profile > a span {
+    font-size: 15px;
+    color: white;
+    padding-left: 10px;
+}
+
+.profile > a img {
+    max-width: 30px;
+    border-radius: 50%;
+    background-color: #86888c;
+    object-fit: cover;
+
+
 }
 
 .container-main-right {
@@ -157,6 +214,11 @@ header a {
 footer  
 */
 
+#bottom {
+    position: relative;
+    z-index: 1;
+}
+
 .container-footer {
     height: 100px;
     background-color: #282828;
@@ -201,7 +263,7 @@ footer
 }
 
 .container-footer-central-top i {
-    padding-left: 20px;
+    padding-left: 10px;
     color: white;
 }
 
@@ -285,6 +347,8 @@ responsive
     #top > .container-main-right{
         width: calc(100% - 50px);
     }
+
+
 
     
 }
