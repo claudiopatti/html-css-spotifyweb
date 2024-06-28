@@ -26,7 +26,7 @@ main
 }
 
 .container-main-left {
-    background-color: lightcoral;
+    background-color: black;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -46,11 +46,13 @@ main
 
 .logo {
     max-width: 200px;
-    padding: 20px 10px 10px;
-    
+    padding: 20px 10px 10px;  
 }
 
-.home > a img ,
+.logo-small {
+    display: none;
+}
+
 .cerca > a img ,
 .library > a img {
     max-width: 40px;
@@ -58,7 +60,9 @@ main
 }
 
 .home {
-    border-left: 3px solid green;
+    border-left: 3px solid lightgreen;
+    padding-left: 8px;
+    max-width: 40px;
 }
 
 #top .container-main-left-central {
@@ -66,14 +70,41 @@ main
     padding: 15px 10px;
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow: hidden;
     
+}
+
+.container-main-left-central h4 {
+    color: white;
+    padding-bottom: 10px;
+   
+}
+
+.container-main-left-central .more-playlist {
+    color: #86888c; 
+    display: flex;
+    align-items: center;
+}
+
+.container-main-left-central .more-playlist i {
+    font-size: 40px; 
+    padding-right: 10px;
 }
 
 .container-main-left-central nav {
     flex-grow: 1;
     overflow: auto;
 }
+
+.container-main-left-central nav ul li {
+    padding-top: 10px;
+}
+
+.container-main-left-central nav ul li a {
+    text-decoration: none;
+    color: #86888c;
+}
+
 
 .container-main-left-bottom div  {
     margin: 5px 10px;
@@ -83,6 +114,7 @@ main
     display: flex;
     align-items: center;
     text-decoration: none;
+    color
 }
 
 .download  {
@@ -96,6 +128,7 @@ main
 .download > a span {
     font-size: 10px;
     padding-left: 10px;
+    color: #86888c;
 }
 
 .profile > a span {
@@ -346,6 +379,33 @@ responsive
 
     #top > .container-main-right{
         width: calc(100% - 50px);
+    }
+
+    .logo {
+        display: none;
+    }
+    
+    .logo-small {
+        display: block;
+        padding: 20px 10px 10px;
+        max-width: 70px;
+    }
+
+    .menu-home nav ul li a > span {
+        display: none;
+    }
+
+    .container-main-left-central > * ,
+    .container-main-left-central .more-playlist {
+        display: none;
+    }
+
+    .container-main-left-bottom div a > span {
+        display: none;
+    }
+
+    .container-main-left-bottom .download {
+        border: none;
     }
 
 
