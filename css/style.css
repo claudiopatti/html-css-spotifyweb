@@ -114,7 +114,6 @@ main
     display: flex;
     align-items: center;
     text-decoration: none;
-    color
 }
 
 .download  {
@@ -169,10 +168,11 @@ header {
 
 header a {
     text-decoration: none;
+    font-size: 13px;
     color: white;
     border: 1px solid white;
     border-radius: 20px;
-    padding: 5px 25px; 
+    padding: 10px 25px; 
 }
 
 .container-main-right nav ul {
@@ -284,7 +284,7 @@ footer
     font-size: 10px;
 }
 
-.container-footer-left i {
+.container-footer-left > i {
     color: #86888c;
     padding-left: 10px; 
 }
@@ -296,7 +296,7 @@ footer
 }
 
 .container-footer-central-top i {
-    padding-left: 10px;
+    padding: 0 15px;
     color: white;
 }
 
@@ -345,7 +345,37 @@ footer
     border-radius: 30px;
 }
 
+/* 
+Hover  
+*/
 
+.menu-home nav ul li a > span:hover ,
+.container-main-left-central .more-playlist:hover ,
+.container-main-left-central nav ul li a > span:hover ,
+.container-main-left-bottom .download a > span:hover , 
+.container-main nav ul li a:hover ,
+.brano-riproduction h4:hover ,
+.container-footer-left > i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+header div > a:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container-footer-central-top i:nth-child(3):hover {
+    cursor: pointer;
+    font-size: 35px;
+} 
+
+.my-col:hover + img  {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.25);
+    
+
+}
 
 
 /* 
@@ -412,3 +442,9 @@ responsive
 
     
 }
+
+/* 
+fare hover alle immagini
+fare hover alle barre di caricamento
+fare trattino verde sotto IN EVIDENZA
+cambiare immagine canzone preferita */
